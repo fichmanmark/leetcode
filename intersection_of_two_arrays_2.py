@@ -12,7 +12,6 @@ class Solution:
             for i in nums1:
                 d[i] += 1
         res = []
-        print(d)
         if n1 > n2:
             for i in nums1:
                 if i in d:
@@ -25,7 +24,6 @@ class Solution:
                     if d[i] > 0:
                         res.append(i)
                         d[i] -= 1
-        print(res)
         return res
         
 
